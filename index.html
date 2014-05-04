@@ -1,0 +1,126 @@
+<!doctype html>
+<html ng-app="ECApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Elastic Coders</title>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/foundation.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+	<div class="fixed animate-opacity" ng-show="showTopBar" init-after-delay="showTopBar=true">
+		<div class="top-bar-background animate-opacity" ng-show="!siteHeaderVisible||topBarExpanded"></div>
+		<nav class="top-bar" ng-class="{ 'expanded':topBarExpanded }">
+			<ul class="title-area">
+				<li class="name">
+					<h1 class="site-title animate-opacity" ng-show="!mainTitleVisible||topBarExpanded"><a href="/">Elastic Coders</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="" ng-click="topBarExpanded=!topBarExpanded"><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li><a href="#coders">About</a></li>
+					<li><a href="#contacts">Contacts</a></li>
+				</ul>
+			</section>
+		</nav>
+	</div>
+
+	<header id="site-header" in-view="siteHeaderVisible=$inview" in-view-offset="-45">
+		<h1 class="site-title" in-view="mainTitleVisible=$inview" in-view-offset="-40">Elastic Coders</h1>
+		<p id="mission">
+			We <a href="#vision">empower your vision</a><br>
+			by <a href="#product">crafting your product</a><br>
+			and <a href="#team">assembling your team</a>
+		</p>
+		<p>(with software)</p>
+	</header>
+
+	<section id="vision" class="row">
+		<div class="small-12 columns">
+			<p>
+				The <strong>Elastic Coders</strong> worked and explored the sofware industry
+				for many years and realized how technology ought to be used to empower new visions:
+			</p>
+			<p style="text-align:center; font-weight:300; font-size: 1.6em">
+				Refine an idea, make it into a marketable product and build a passionate team to
+				provide internal support for the product lifetime.
+			</p>
+			<p>
+				This is what out clients want and what we do our best to provide.
+			</p>
+		</div>
+	</section>
+
+	<section id="product" class="row">
+		<div class="small-12 columns">
+			<h2>How we craft your product</h2>
+			<p>A handfull of skilled and expert senior developers will take hold of your vision and help you structure it. User stories, technical analysis and development are performed together with you to fullfill all specific demands.</p>
+			<p>
+				Our technology becomes <strong>your</strong> technology. Because of that, it is carefully put together with a special care to manutenability and scaling capabilities. It is chosen considering adoption, performance, ease of use and ecosystem.
+				Open Source, dynamic languages and extensive framework usage are the basis of all projects.
+			</p>
+			<p>The stack idesigned gorund-up to be fast, scalable and long-lasting; we want our efforts to run efficiently and be easy to mantain over the years. We keep it lean and sensible.</p>
+			<p>Check out our <a href="#">opensource contributions</a> to get a feeling of what we like most.</p>
+		</div>
+	</section>
+
+	<section id="team" class="row">
+		<div class="small-12 columns">
+			<h2>How we build your team</h2>
+
+			<p>Very soon your new product will be ready for prime time and you’ll need an iternal team to mantain and to enhace it. Right from the beginning of the project we help you with job interviews, later on we inlcude your internal resources into our development process and finally your team will be able to take over.</p>
+
+			<p>The most productive and yielding development process is affined and passed over during the joint development phase. We embrace agile methods and expecially Scrum, which makes us and our parter teams very productive. </p>
+		</div>
+	</section>
+
+	<section id="coders" class="row">
+		<div class="small-12 columns">
+			<h2>The Elastic Coders</h2>
+
+			<h3>Core team members and skills</h3>
+
+			<p><strong>Marco Paolini</strong> is the CEO and CTO (yeah, we are fully tech-oriented!). He's an experienced python backend developer and likes programming for industrial automation systems. 10+ year experiencce as a coder, manager and lecturer in various businesses in Italy and around the world.</p>
+
+			<p><strong>Davide Scatto</strong> has 15+ years of experience in software development, analysis, problem solving and architectural design of complex and scalable systems. He’s skilled in delphi, python/django, php/zend for web or desk application with use of interbase, mysql, postgresql and more. 10+ years of experience in project management and team leading.</p>
+
+			<p>
+				<strong>Nicola Peduzzi</strong> is a passionate Software Engineer with
+				more than 5 years of experience in the field. He designed and developed
+				a variety of systems for mobile platforms, web and industrial automation.
+			</p>
+
+			<h3>Your Elastic Coders team</h3>
+			<p>Your team’s skills will be augmented and will soon become as elastic as we are!</p>
+		</div>
+	</section>
+
+	<section id="opensource" class="row">
+		<div class="small-12 columns">
+			<h2>Open source contributions</h2>
+			<ul>
+				<li><a href="https://angularjs.org/">AngularJS</a> is a Google web framework that we contributed to</li>
+				<li><a href="http://thenikso.github.io/angular-autolayout/">Angular-Autlayout</a> is a layout system for angular web apps</li>
+				<li><a href="https://github.com/thenikso/angular-inview">Angular-InView</a> is an AngularJS directive to check when a DOM element is visible</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="contacts" class="row">
+		<div class="small-12 columns">
+			<h2>Contacts</h2>
+			<p>Contact us via email at <a href="mailto:info@elastic-coders.com">info@elastic-coders.com</a></p>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-animate.min.js"></script>
+	<script src="scripts/angular-inview.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>

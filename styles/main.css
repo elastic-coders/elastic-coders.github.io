@@ -1,0 +1,85 @@
+body, h1, h2, h3, h4, h5, h6, a, p {
+	font-family: Quicksand, sans-serif;
+	color: #333;
+}
+
+a {
+	color: #48cfad;
+}
+
+a:hover {
+	color: #48cfad;
+	text-decoration: underline;
+}
+
+body > section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.animate-opacity.ng-hide-remove,
+.animate-opacity.ng-hide-add {
+	transition: opacity ease-in-out .25s;
+	display: block !important;
+}
+.animate-opacity.ng-hide-remove,
+.animate-opacity.ng-hide-add.ng-hide-add-active {
+	opacity: 0;
+}
+.animate-opacity.ng-hide-remove.ng-hide-remove-active,
+.animate-opacity.ng-hide-add {
+	opacity: 1;
+}
+
+/* Top bar */
+.top-bar,
+.top-bar.expanded .title-area {
+	background: transparent;
+}
+.top-bar-background {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #48cfad;
+}
+.top-bar-section ul,
+.top-bar-section ul li > a {
+	font-family: inherit;
+	background: transparent !important;
+}
+.top-bar-section ul li.active > a {
+	background: rgba(255, 255, 255, .3) !important;
+}
+
+/* Header */
+.site-title,
+.site-title > a {
+	font-family: 'Kaushan Script', serif;
+	text-decoration: none;
+}
+
+#site-header {
+	background: #68efcd url(../images/hero.jpg);
+	height: 100%;
+	overflow: hidden;
+	padding: 4rem 0;
+	text-align: center;
+}
+#site-header p {
+	color: white;
+	font-weight: 300;
+}
+#site-header .site-title {
+	font-size: 6em;
+	color: #48cfad;
+}
+#site-header #mission {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+#site-header #mission a {
+	color: white;
+}
