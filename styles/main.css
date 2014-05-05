@@ -62,7 +62,7 @@ body > section {
 
 #site-header {
 	background: #68efcd url(../images/hero.jpg);
-	height: 100%;
+	min-height: 100%;
 	overflow: hidden;
 	padding: 4rem 0;
 	text-align: center;
